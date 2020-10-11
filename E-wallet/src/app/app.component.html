@@ -1,0 +1,124 @@
+<app-loading-screen></app-loading-screen>
+
+
+<div id="titulo">
+  <h1 class="h1"><i> E - <b>Wallet</b> </i></h1>
+  <h4 class="h4"><i>Tu banco</i></h4>
+
+</div>
+
+<br>
+<br>
+<div class="container" *ngIf="(TransaccionesArray || TransaccionesArrayBD) != null ; else sinTransacciones">
+  <div class="container" *ngFor="let transaccionusada of TransaccionesArray.reverse()">
+
+    <div class="card" id="transacciones">
+
+      <div class="card-body" id="transaccion" *ngIf="transaccionusada.importe >= 0; then ingreso else gasto"></div>
+
+      <ng-template #ingreso>
+        <div class="card-body" style="background-color: #28a7463d;">
+          <div id="transaccion">
+            <span class="concept" id="concepto">{{transaccionusada.concepto}}</span>
+            <span class="amount" id="transactionamount" style="color: green;"> + {{transaccionusada.importe}} €</span>
+            <br>
+            <span class="date" id="date">{{transaccionusada.fecha}}</span>
+          </div>
+        </div>
+
+      </ng-template>
+
+      <ng-template #gasto id="transaccion">
+        <div class="card-body" style="background-color: #dc35462c;">
+          <div id="transaccion">
+            <span class="concept" id="concepto">{{transaccionusada.concepto}}</span>
+            <span class="amount" id="transactionamount" style="color: red;"> {{transaccionusada.importe}} €</span>
+            <br>
+            <span class="date" id="date">{{transaccionusada.fecha}}</span>
+          </div>
+        </div>
+
+      </ng-template>
+
+
+    </div>
+    <br>
+  </div>
+</div>
+<ng-template #sinTransacciones>
+  <div id="sinTransacciones">
+    <div>
+      <h1>No tienes transacciones aún</h1>
+
+      <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_egmSxc.json" background="transparent" speed="1"
+        style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+    </div>
+
+
+
+  </div>
+</ng-template>
+
+
+<div id="modal-button">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"
+    id="modal-button">
+
+    <svg width="7em" height="7em" viewBox="4 3 37 33" class="bi bi-plus" fill="white"
+      xmlns="http://www.w3.org/2000/svg">
+
+      <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z" />
+
+      <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z" />
+
+    </svg>
+
+  </button>
+
+</div>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  aria-hidden="true" style="z-index: 10000;">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" id="suma-transaccion">
+      <h1>Añade una nueva transacción</h1>
+
+
+      <div class="form-group">
+        <label for="Concepto">Concepto</label>
+        <div class="alert alert-danger" role="alert" *ngIf="ConceptoValido == false && inputpulsado == true">
+          <p>Introduce un concepto sin números</p>
+        </div>
+
+        <input [(ngModel)]="Conceptodetransaccion"
+          [className]=" ConceptoValido == false && inputpulsado == true ? 'form-control is-invalid' : 'form-control is-valid'"
+          type="text" class="form-control" aria-describedby="text" placeholder="Introduce el concepto"
+          id="Importedetransaccioninput" required />
+        <small class="form-text text-muted"> Información privada </small>
+
+        
+      </div>
+
+
+
+      <div class="form-group">
+
+        <label for="Importe">Importe</label>
+        <input [(ngModel)]="Importedetransaccion"
+          [className]=" ImporteValido == false && inputpulsado == true ? 'form-control is-invalid' : 'form-control is-valid'"
+          type="number" class="form-control" aria-describedby="text" placeholder="Introduce Importe" required />
+        
+
+      </div>
+
+     
+
+      <button type="submit" class="btn btn-primary" id="boton-añadir-transaccion" (click)="sumatransaccion()">Añadir
+        transacción</button>
+
+      <button (click)="limpiarTransacciones()" class="btn btn-warning" id="botonLimpiarTransacciones">Limpiar
+        Transacciones</button>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
