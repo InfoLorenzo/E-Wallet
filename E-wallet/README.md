@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">A basic Web Browser Wallet to note your transactions on<a href="https://github.com/InfoLorenzo/E-Wallet" target="_blank">E - Wallet</a>.</h4>
+<h4 align="center">A basic Web Browser Wallet to note your transactions on <a href="https://github.com/InfoLorenzo/E-Wallet" target="_blank">E - Wallet</a>.</h4>
 
 ![screenshot](https://imgur.com/LH7IQNw)
 
