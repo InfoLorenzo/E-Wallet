@@ -8,7 +8,7 @@
 
 <h4 align="center">A basic Web Browser Wallet to note your transactions on <a href="https://github.com/InfoLorenzo/E-Wallet" target="_blank">E - Wallet</a>.</h4>
 
-![screenshot](https://imgur.com/LH7IQNw)
+![screenshot](https://github.com/InfoLorenzo/E-Wallet/blob/master/Background/Github-Assets/E-Wallet-utility.gif)
 
 ## Key Features
 
