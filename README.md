@@ -12,6 +12,7 @@
 <p align="center">
   <img width="auto" height="auto" src="https://github.com/InfoLorenzo/E-Wallet/blob/master/Background/Github-Assets/E-Wallet-utility.gif">
 </p>
+
 ## Key Features
 
 * LivePreview - Add Transactions, See on Real-Time
