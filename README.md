@@ -1,15 +1,17 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/InfoLorenzo/E-Wallet/blob/master/Background/Github-Assets/E-Wallet-favicon.png" alt="E-Wallet" width="200"></a>
+  <a href="https://github.com/InfoLorenzo/E-Wallet" alt="E-Wallet" width="200">
+   <img width="350" height="350" src="https://github.com/InfoLorenzo/E-Wallet/blob/master/Background/Github-Assets/E-Wallet-favicon.png">
+  </a>
   <br>
     
   <br>
 </h1>
 
 <h4 align="center">A basic Web Browser Wallet to note your transactions on <a href="https://github.com/InfoLorenzo/E-Wallet" target="_blank">E - Wallet</a>.</h4>
-
-![screenshot](https://github.com/InfoLorenzo/E-Wallet/blob/master/Background/Github-Assets/E-Wallet-utility.gif)
-
+<p align="center">
+  <img width="auto" height="auto" src="https://github.com/InfoLorenzo/E-Wallet/blob/master/Background/Github-Assets/E-Wallet-utility.gif">
+</p>
 ## Key Features
 
 * LivePreview - Add Transactions, See on Real-Time
