@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://imgur.com/Mok6OKL" alt="E-Wallet" width="200"></a>
+  <a href="https://github.com/InfoLorenzo/E-Wallet/blob/master/Background/Github-Assets/E-Wallet-favicon.png" alt="E-Wallet" width="200"></a>
   <br>
     
   <br>
