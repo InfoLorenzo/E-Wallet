@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
   <a href="https://github.com/InfoLorenzo/E-Wallet" alt="E-Wallet" width="200">
-   <img width="350" height="350" src="https://github.com/InfoLorenzo/E-Wallet/blob/master/Background/Github-Assets/E-Wallet-favicon.png">
+   <img width="300" height="300" src="https://github.com/InfoLorenzo/E-Wallet/blob/master/Background/Github-Assets/E-Wallet-favicon.png">
   </a>
   <br>
     
