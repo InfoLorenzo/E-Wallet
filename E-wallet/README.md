@@ -59,5 +59,5 @@ MIT
 
 ---
 
-> GitHub [@amitmerchant1990](https://github.com/InfoLorenzo) &nbsp;&middot;&nbsp;
+> GitHub [@InfoLorenzo](https://github.com/InfoLorenzo) &nbsp;&middot;&nbsp;
 
