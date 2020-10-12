@@ -1,14 +1,17 @@
 <h1 align="center">
   <br>
-  <a href="https://imgur.com/Mok6OKL" alt="E-Wallet" width="200"></a>
+  <a href="https://github.com/InfoLorenzo/E-Wallet" alt="E-Wallet" width="200">
+   <img width="300" height="300" src="https://github.com/InfoLorenzo/E-Wallet/blob/master/Background/Github-Assets/E-Wallet-favicon.png">
+  </a>
   <br>
     
   <br>
 </h1>
 
 <h4 align="center">A basic Web Browser Wallet to note your transactions on <a href="https://github.com/InfoLorenzo/E-Wallet" target="_blank">E - Wallet</a>.</h4>
-
-![screenshot](https://imgur.com/LH7IQNw)
+<p align="center">
+  <img width="auto" height="auto" src="https://github.com/InfoLorenzo/E-Wallet/blob/master/Background/Github-Assets/E-Wallet-utility.gif">
+</p>
 
 ## Key Features
 
